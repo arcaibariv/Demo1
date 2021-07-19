@@ -111,6 +111,8 @@ botonBuscar.onclick = () => {
     division.innerHTML=""
     console.log(busqueda.replace(/ /g,"-"))
     mostrarArticulosBuscar(objetoConsulta,busqueda.replace(/ /g,""))
+
+    demo()
 }
 
 
