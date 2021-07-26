@@ -25,6 +25,8 @@ app.get('/', cors(corsOption), (req, res) => {
 app.post('/nuevo',cors(corsOption), (req,res) => {
   try {
     db.nuevoArticulo(req.body.titulo, req.body.id, req.body.precio);
+    console.log(req.body)
+    console.log('dentro del post')
     db.respuesta = {
       codigo: 200,
       error:false,

@@ -123,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
 
+
 //https://api.mercadolibre.com/trends/MLM  tendencias
 //https://api.mercadolibre.com/sites/MLM/search?q=Motorola%20G6 Busqueda
 //https://api.mercadolibre.com/sites/MLM/search?category=MLM1058...' categorias

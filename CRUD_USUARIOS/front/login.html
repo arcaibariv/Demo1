@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <form class="formulario"  id="form1">
+    <h1>Iniciar sesión</h1>
+
+    <div class='contenedor' id='datos'>
+      <div class='input-contenedor' >
+        <i class="fas fa-user icon"></i>
+        <input id='nombreUsuario' type="text" placeholder="Nombre de usuario" name='nombreUsuario'>
+      </div>
+
+      <div class='input-contenedor'>
+          <i class="fas fa-key icon"></i>
+          <input id='password' type="password" placeholder="Contraseña" name='password' >
+      </div>
+      
+      <button class="button" onclick="getFormData('form1');">Iniciar sesión</button>
+      
+      <p>Al ingresar, aceptas los términos y condiciones.</p>
+      <p>¿Aun no tienes una cuenta? <a class="link" href="registro.html"> Registrate</a></p>
+
+
+
+    </div>
+    </div>
+  </form>
+
+
+  <script src="login.js"></script>
+</body>
+</html>

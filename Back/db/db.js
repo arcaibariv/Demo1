@@ -28,6 +28,7 @@ const buscaArticulo = (id) => {
 }
 
 const nuevoArticulo = (titulo,id,precio) => {
+  
   Carrito[id] = new carritoCompras(titulo,id,precio)
   cantidadArticulo.cantidad++;
 }
