@@ -19,10 +19,10 @@ module.exports = (app)=> {
         }
     })
 
-    app.get('/usuarios', midd.usuarioValido, async (req,res)=>{
+    app.get('/usuarios',  async (req,res)=>{
         try {
             let resultado = await usuariosService.listaUsuarios()
-            res.json(req.params)
+            res.status(200).json(resultado)
         }catch (err){
             console.log(err)
             res.status(400).send('Ocurrio un error inesperado')
@@ -30,6 +30,7 @@ module.exports = (app)=> {
     })
 
     app.post('/nuevousuario', async (req,res)=>{
+
         try{
             const usuario = req.body
             let resultado = usuariosService.crearUsuarios(usuario)
@@ -40,4 +41,5 @@ module.exports = (app)=> {
             res.status(400).send('Ocurrio un error inesperado')  
         }
     })
+
 }

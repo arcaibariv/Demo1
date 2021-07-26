@@ -17,11 +17,11 @@ module.exports.listaUsuarios = async ()=>{
 
 module.exports.crearUsuarios = async (usuario)=> {
     let usrNuevo = [
-        usuario.nombres,
-        usuario.apellidos,
+        usuario.nombre,
+        usuario.apellido,
         usuario.usuario,
-        usuario.correo,
-        usuario.password
+        usuario.password,
+        usuario.correo
     ]
     try {
         let resultado = await dbUsuarios.nuevoUsuario(usrNuevo)

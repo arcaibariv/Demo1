@@ -15,6 +15,7 @@
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-rate-limit": "^5.3.0",
     "nodemon": "^2.0.12",
     "sequelize": "^6.6.5",
     "tedious": "^11.4.0"

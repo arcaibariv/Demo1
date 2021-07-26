@@ -7,7 +7,7 @@ module.exports.nuevoUsuario = async (usr)=> {
     try {
         console.log('nuevoUsuario dentro')
         console.log(usr)
-        console.log(usr[0])
+
         let resultado = await sequelize.query(`SELECT * FROM usuarios WHERE apellido = '${usr[1]}'`);
         if (resultado.lenght > 0){
             return false
